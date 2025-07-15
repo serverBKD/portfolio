@@ -1,21 +1,23 @@
 ---
-import '../styles/global.css';
-import Button from '../components/Button.astro';
+import "../styles/global.css";
+import Hero from "@/components/mycomponents/Hero.jsx";
 ---
 
 <html lang="es">
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>cmba portfolio</title>
-	</head>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>cmba portfolio</title>
+  </head>
 
-	<body>
-		<div class="grid place-items-center h-screen content-center">
-			<Button>Tailwind Button in Astro!</Button>
-			<a href="/markdown-page" class="p-4 underline">Markdown is also supported...</a>
-		</div>
-	</body>
+  <body>
+		<Hero/>
+    <section class="">
+      <article>
+        <h1>sobre mí</h1>
+      </article>
+    </section>
+  </body>
 </html>

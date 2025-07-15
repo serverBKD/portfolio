@@ -1,6 +1,15 @@
 @import 'tailwindcss';
 @import "tw-animate-css";
 
+
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: url('/fonts/Montserrat-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
@@ -39,6 +48,8 @@
   --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
   --color-sidebar-border: var(--sidebar-border);
   --color-sidebar-ring: var(--sidebar-ring);
+  --color-x-bg: var(--night-void);
+  --color-x-text: var(--moonlight-mist);
 }
 
 :root {
@@ -74,6 +85,25 @@
   --sidebar-accent-foreground: oklch(0.205 0 0);
   --sidebar-border: oklch(0.922 0 0);
   --sidebar-ring: oklch(0.708 0 0);
+  /* mis variables */
+  --font-sans: "Montserrat-Regular", sans-serif;
+  --font-size: 24px;
+  --night-void: #0F0F1A;
+  --graphite-shadow: #1E1E2E;
+  --electric-purple: #B624F9;
+  --neon-ember: #FF6A90;
+  --moonlight-mist: #D1D1E5;
+  --fog-grey: #A8A8C3;
+  --terracota-classic: #E2725B;
+  --terracota-soft: #C89C7D;
+  --terracota-deep: #E35336;
+  --terracota-digital: #E35336;
+  --naranja-oxidado: #D47E30;
+  --cinabrio-moderno: #E84B3D;
+  --naranja-valencia: #F15A29;
+  --azul-oscuro: #1E2A38;
+  --gris-humo: #E5E5E5;
+
 }
 
 .dark {
@@ -114,7 +144,52 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
+}
+
+body {
+  width: 100%;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-x-bg);
+  color: var(--color-x-text);
+  font-size: var(--font-size);
+}
+
+.hero {
+  width: 100%;
+  min-height: 50dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to top, var(--electric-purple), var(--naranja-valencia));
+
+  &h1 {
+    font-size: 2rem;
+  }
+}
+
+.hero-text {
+  width: 70%;
+  height: 50dvh;
+  /* background-color: var(--color-red-600); */
+}
+
+.hero-img {
+  width: 30%;
+  height: 50dvh;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+#img-avatar {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  border: 2px solid var(--neon-ember);
 }
