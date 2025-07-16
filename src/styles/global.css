@@ -163,7 +163,7 @@ body {
   min-height: 100dvh;
   display: flex;
   flex-direction: column;
-  background-color: var(color-test-1);
+  background-color: var(color-test-5);
   color: var(--color-x-text);
   font-size: var(--font-size);
   padding: 0;
@@ -174,17 +174,19 @@ body {
   min-height: 100dvh;
   display: grid;
   place-content: center;
-  background: linear-gradient(to top, var(--color-test-2), var(--color-test-1));
+  background: radial-gradient(circle at top right, var(--color-test-4), var(--color-test-1) 50%, var(--color-test-2) 100%);
   overflow: hidden;
 }
 
 .hero-box {
   width: 100%;
+  /* max-width: 1240px; */
   min-height: 100dvh;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 2rem 4rem;
+  background-color: var(color-test-3);
 }
 
 .hero-text {
@@ -206,6 +208,12 @@ body {
     max-width: 50%;
     font-weight: 900;
   }
+}
+
+#hero-span,
+h2 {
+  padding: .18rem .2rem;
+  background: linear-gradient(to top left, var(--color-test-5), var(--color-test-1) 50%, var(--color-test-7) 100%);
 }
 
 .hero-img {
