@@ -103,6 +103,14 @@
   --naranja-valencia: #F15A29;
   --azul-oscuro: #1E2A38;
   --gris-humo: #E5E5E5;
+  /** Color Test Palette*/
+  --color-test-1: #222939;
+  --color-test-2: #0b0e1b;
+  --color-test-3: #e29e24;
+  --color-test-4: #05719f;
+  --color-test-5: #e55210;
+  --color-test-6: #0f172a4d;
+  --color-test-7: #2cc9ff;
 
 }
 
@@ -155,41 +163,95 @@ body {
   min-height: 100dvh;
   display: flex;
   flex-direction: column;
-  background-color: var(--color-x-bg);
+  background-color: var(color-test-1);
   color: var(--color-x-text);
   font-size: var(--font-size);
+  padding: 0;
 }
 
 .hero {
   width: 100%;
-  min-height: 50dvh;
+  min-height: 100dvh;
+  display: grid;
+  place-content: center;
+  background: linear-gradient(to top, var(--color-test-3), var(--color-test-5) 30%, var(--color-test-1));
+  overflow: hidden;
+}
+
+.hero-box {
+  width: 100%;
+  min-height: 100dvh;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(to top, var(--electric-purple), var(--naranja-valencia));
-
-  &h1 {
-    font-size: 2rem;
-  }
+  gap: 2rem 4rem;
 }
 
 .hero-text {
-  width: 70%;
-  height: 50dvh;
-  /* background-color: var(--color-red-600); */
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  text-align: justify;
+
+  & h1 {
+    font-size: 2rem;
+    font-weight: 800;
+    font-style: italic;
+  }
+
+  & p {
+    font-size: 1.255rem;
+    max-width: 50%;
+    font-weight: 900;
+  }
 }
 
 .hero-img {
   width: 30%;
-  height: 50dvh;
+  height: 100dvh;
   display: flex;
-  align-items: flex-start;
-  justify-content: center;
+  align-items: center;
+  justify-items: center;
 }
 
 #img-avatar {
-  width: 10rem;
-  height: 10rem;
-  border-radius: 50%;
-  border: 2px solid var(--neon-ember);
+  width: 30rem;
+  height: 30rem;
+  border-radius: 43%;
+  filter: drop-shadow(5px 5px 10px var(--color-test-2));
+}
+
+/*? Media Queries */
+
+@media screen and (width < 1080px) {
+  .hero-box {
+    flex-direction: column-reverse;
+    min-height: 70dvh;
+  }
+
+  .hero-text {
+    width: 100%;
+    align-items: center;
+    padding: auto 3rem;
+
+    & p {
+      min-width: 100%;
+      text-align: center;
+      padding: 1rem 3rem;
+    }
+  }
+
+  .hero-img {
+    width: 100%;
+    max-height: max-content;
+    text-align: center;
+    background-color: var(--color-test-3);
+  }
+
+  #img-avatar {
+    width: 18rem;
+    height: 18rem;
+  }
 }
