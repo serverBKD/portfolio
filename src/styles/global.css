@@ -163,7 +163,6 @@ body {
   min-height: 100dvh;
   display: flex;
   flex-direction: column;
-  background-color: var(color-test-5);
   color: var(--color-x-text);
   font-size: var(--font-size);
   padding: 0;
@@ -235,11 +234,13 @@ body {
 
 @media screen and (width < 1080px) {
   .hero-box {
+    display: flex;
     flex-direction: column-reverse;
     min-height: 70dvh;
   }
 
   .hero-text {
+    display: flex;
     width: 100%;
     align-items: center;
     padding: auto 3rem;
