@@ -174,7 +174,7 @@ body {
   min-height: 100dvh;
   display: grid;
   place-content: center;
-  background: linear-gradient(to top, var(--color-test-3), var(--color-test-5) 30%, var(--color-test-1));
+  background: linear-gradient(to top, var(--color-test-2), var(--color-test-1));
   overflow: hidden;
 }
 
@@ -247,11 +247,12 @@ body {
     width: 100%;
     max-height: max-content;
     text-align: center;
-    background-color: var(--color-test-3);
+    /* background-color: var(--color-test-3); */
   }
 
   #img-avatar {
     width: 18rem;
     height: 18rem;
+    margin: 0 auto;
   }
 }

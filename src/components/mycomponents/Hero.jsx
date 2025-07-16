@@ -3,12 +3,11 @@ export default function Hero() {
     <section className="hero">
       <div className="hero-box">
         <article className="hero-text">
-          <h1 className="text-slate-900">Carlos Manuel Bravo Araújo</h1>
-          <h2 className="text-slate-800">Desarrollador FullStack</h2>
-          <h3 className="text-gray-900">JS | TypeScript | Python | NodeJS</h3>
-          <h4 className="text-gray-900">about me</h4>
-          {/* <p>Hola,soy Carlos</p> */ }
-          <p id="hero-text-p" className="text-slate-900">
+          <h1>Carlos Manuel Bravo Araújo</h1>
+          <h2>Desarrollador FullStack</h2>
+          <h3>JS | TypeScript | Python | NodeJS</h3>
+          <h4>about me</h4>
+          <p id="hero-text-p" >
             Soy desarrollador web apasionado por crear aplicaciones escalables, visualmente atractivas y con experiencias de usuario intuitivas. Trabajo principalmente con Quasar, Vue Flow, Next.js y Node.js, integrando diseño estético y optimización técnica en cada proyecto.
           </p>
         </article>
