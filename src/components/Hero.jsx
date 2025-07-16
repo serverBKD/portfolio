@@ -1,7 +1,7 @@
 export default function Hero() {
   return (
     <section className="hero">
-      <div className="hero-box">
+      <section className="hero-box">
         <article className="hero-text">
           <h1>Carlos Manuel Bravo Araújo</h1>
           <h2>Desarrollador FullStack</h2>
@@ -22,7 +22,7 @@ export default function Hero() {
             id="img-avatar"
           />
         </article>
-      </div>
+      </section>
     </section>
   );
 }
