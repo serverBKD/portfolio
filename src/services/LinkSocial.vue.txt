@@ -1,0 +1,42 @@
+<template>
+  <article class="w-full lg:w-1/2 px-6 lg:px-0">
+    <span class="flex justify-center items-center gap-y-2">
+      <a
+        :href="LINK_INSTAGRAM"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="w-20 h-20 md:w-24 md:h-24 text-slate-100 hover:text-1-color hover:scale-105"
+      >
+        <!-- <SVGInstagram /> -->
+      </a>
+      <a
+        :href="LINK_FACEBOOK"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="w-20 h-20 md:w-24 md:h-24 text-slate-100 hover:text-1-color hover:scale-105"
+      >
+        <!-- <SVGFacebook /> -->
+      </a>
+      <a
+        :href="LINK_TWITTER"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="w-20 h-20 md:w-24 md:h-24 text-slate-100 hover:text-1-color hover:scale-105"
+      >
+        <!-- <SVGTwitter /> -->
+      </a>
+      <a
+        :href="LINK_WS"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="w-20 h-20 md:w-24 md:h-24 text-slate-100 hover:text-1-color hover:scale-105"
+      >
+        <!-- <SVGLinkedin /> -->
+      </a>
+    </span>
+  </article>
+</template>
+
+<script setup>
+import { LINK_INSTAGRAM, LINK_FACEBOOK, LINK_TWITTER, LINK_WS } from '@/constants/constants';
+</script>

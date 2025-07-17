@@ -113,6 +113,7 @@
   --color-test-5: #e55210;
   --color-test-6: #0f172a4d;
   --color-test-7: #B624F9;
+  --color-test-8: #D1D1E5;
 
 }
 
@@ -289,13 +290,106 @@ body {
   filter: drop-shadow(5px 5px 10px var(--color-test-0));
 }
 
+.contacto {
+  width: 100%;
+  min-height: 100dvh;
+  display: grid;
+  place-content: center;
+  overflow: hidden;
+}
+
+.contacto-article {
+  width: var(--card-width);
+  padding-bottom: 3rem;
+  margin: 0 auto;
+}
+
+.contacto-form {
+  /* width: 100%; */
+  width: var(--card-width);
+  min-height: var(--card-width);
+  border-radius: var(--radius-xl);
+  color: var(--color-test-8);
+  background-color: var(--color-test-1);
+  filter: drop-shadow(5px 5px 10px var(--color-test-7));
+  margin: 0 auto;
+  margin-bottom: 3rem;
+  padding: 0 1rem;
+
+  & h1,
+  h2,
+  p {
+    font-weight: 800;
+    text-align: center;
+    padding: .5rem 0;
+    color: var(--color-test-7);
+  }
+}
+
+.contacto-input {
+  width: 100%;
+  height: 2rem;
+  padding: .5rem 0;
+}
+
+.contacto-input::placeholder {
+  color: var(--color-test-2);
+}
+
+.contacto-input:focus {
+  background-color: var(--color-test-2);
+  border: .2rem solid var(--color-test-1);
+  outline: 0;
+}
+
+.contacto-input-fullname:active {
+  background-color: var(--color-test-2);
+}
+
+.contacto-message {
+  min-height: 12rem;
+}
+
+.div-btn {
+  width: 100%;
+  text-align: center;
+  /* background-color: var(--color-test-5); */
+}
+
+.contacto-btn {
+  width: 50%;
+  margin: 0 auto;
+  border: none;
+  border-radius: var(--radius-xl);
+  padding: 1rem .5rem;
+  background-color: var(--color-test-7);
+  transition: .5s all ease-in-out;
+  color: var(--color-test-1);
+  font-weight: 800;
+
+  /* text-1-color bg-2-color border-0 py-2 px-6 focus: outline-none hover:bg-1-color hover:text-2-color text-xl hover:uppercase */
+}
+
+.contacto-btn:hover {
+  cursor: pointer;
+  filter: drop-shadow(5px 5px 10px var(--color-test-7));
+  background-color: var(--color-test-0);
+}
+
+a.contacto-link-ws {
+  width: calc(var(--card-width) * .75);
+  padding: 2rem 4rem;
+}
+
+a.contacto-link-ws:hover {
+  background-color: #25D366;
+}
+
+/* {
+  /* w-full lg: w-1/2 mx-auto h-full flex items-center justify-center bg-cyan-400 text-2-color hover:text-1-color hover:bg-2-color text-2xl border-0 hover:bg-[#25D366] hover:text-slate-800 outline-none text-center */
+
 /*! garbage collector CSS*/
 
-/* background-color: var(--color-test-0); */
-/* background-color: #0ccc26; */
-/* padding: .5rem; */
-/* display: grid;
-place-content: center; */
 
 /*? Media Queries */
 
@@ -359,6 +453,17 @@ place-content: center; */
     max-width: 1.3rem;
     display: flex;
     justify-content: center;
+  }
+
+  .contacto-article {
+    width: 100%;
+    /* min-width: 100dvw; */
+  }
+
+  .contacto-form {
+    width: 100%;
+    max-width: 100dvw;
+    /* max-width: var(--card-width); */
   }
 }
 
@@ -480,10 +585,4 @@ place-content: center; */
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   box-shadow: 0 4px 8px var(--color-test-4);
-}
-
-@media screen and (max-width: 960px) {
-  .box-card {
-    margin: 0 auto;
-  }
 }
