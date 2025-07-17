@@ -40,7 +40,7 @@ export default function Contacto() {
 						CONTACTO
 					</h1>
 					<h2>
-						¡Expertos en Solucionar!
+						¡Experto en Solucionar!
 					</h2>
 					<input
 						type='text'
