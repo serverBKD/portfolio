@@ -3,7 +3,7 @@ export default function Hero() {
     <section className="hero">
       <section className="hero-box flex">
         <article className="hero-text">
-          <h1>Carlos Manuel Bravo Araújo</h1>
+          <h1>JS | TypeScript | NodeJS | Python</h1>
           <h2>Desarrollador FullStack</h2>
           {/* <h4>about me</h4> */ }
           <p id="hero-text-p" >
@@ -12,9 +12,9 @@ export default function Hero() {
         </article>
         <article className="hero-img">
           <img
-            src="./assets/avatar-cmba.png"
+            src="./assets/avatar/avatar-cmba.png"
             alt="cmba-photo-cv-about-me"
-            width={ 640 }
+            width={ 1080 }
             height={ 960 }
             loading="lazy"
             decoding="async"

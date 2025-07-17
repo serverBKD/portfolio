@@ -1,0 +1,42 @@
+---
+// src/components/Avatar.astro
+import * as style from "@dicebear/big-smile";
+import { createAvatar } from "@dicebear/core";
+
+interface Props {
+	seed?: string;
+	size?: number;
+	rounded?: boolean;
+}
+
+const {
+	seed = Math.random().toString(),
+	size = 80,
+	rounded = true,
+} = Astro.props;
+
+const svg = createAvatar(style, {
+	seed: seed,
+	size: size,
+	radius: rounded ? 50 : 0,
+	backgroundColor: ["b6e3f4", "c0aede", "d1d4f9"],
+	backgroundType: ["gradientLinear"],
+});
+---
+
+<div class="avatar-container">
+  <div set:html={svg} class="avatar" />
+</div>
+
+<style>
+.avatar-container {
+  display: inline-block;
+  line-height: 0; /* Elimina espacio extra debajo del SVG */
+}
+
+.avatar svg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+</style>

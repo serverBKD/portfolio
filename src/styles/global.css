@@ -1,7 +1,6 @@
 @import 'tailwindcss';
 @import "tw-animate-css";
 
-
 @font-face {
   font-family: 'Montserrat-Regular';
   src: url('/fonts/Montserrat-Regular.ttf') format('truetype');
@@ -190,12 +189,32 @@ body {
   filter: drop-shadow(5px 5px 10px var(--color-test-2));
 }
 
-.title-box {
+.title-bar {
   width: 100%;
+  min-height: 5rem;
   text-align: center;
   padding: .3rem;
-  color: var(--color-slate-50);
-  font-weight: 800;
+
+  & h1 {
+    color: var(--color-slate-900);
+    font-size: 3rem;
+    font-weight: 900;
+    font-style: italic;
+  }
+}
+
+
+.title-box {
+  width: 70%;
+  padding-left: 2rem;
+  margin: 0 auto;
+
+  & h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    font-style: italic;
+    filter: drop-shadow(3px 2px 3.55px var(--color-test-4));
+  }
 }
 
 .techs {
@@ -224,22 +243,13 @@ body {
         width: 6rem;
         height: 6rem;
         object-fit: cover;
-        filter: drop-shadow(3px 2px 7.55px var(--color-test-0));
+        filter: drop-shadow(3px 5px 1.5px var(--color-test-1)) drop-shadow(.11px 7px 9px var(--color-test-0));
       }
     }
   }
 }
 
-.title-box {
-  width: 100%;
-
-  & h1 {
-    font-size: 2rem;
-    font-weight: bold;
-    font-style: italic;
-    filter: drop-shadow(3px 2px 3.55px var(--color-test-4));
-  }
-}
+/* background-color: var(--color-test-0); */
 
 /* background-color: #0ccc26; */
 /*? Media Queries */
@@ -251,11 +261,28 @@ body {
     min-height: 70dvh;
   }
 
+  .title-box {
+    width: 100%;
+
+    & h1 {
+      font-size: 1.5rem;
+      font-weight: bold;
+      font-style: italic;
+      filter: drop-shadow(3px 2px 3.55px var(--color-test-4));
+    }
+  }
+
   .hero-text {
     display: flex;
     width: 100%;
     align-items: center;
     padding: auto 3rem;
+
+    & h1 {
+      max-width: 375px;
+      text-align: center;
+      color: var(--color-slate-900);
+    }
 
     & p {
       min-width: 100%;
