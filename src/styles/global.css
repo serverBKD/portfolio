@@ -49,7 +49,7 @@
   --color-sidebar-ring: var(--sidebar-ring);
   --color-x-bg: var(--night-void);
   --color-x-text: var(--moonlight-mist);
-  --card-width: 595px;
+  --card-width: 420px;
 }
 
 /* @mixin flex-center {} */
@@ -128,6 +128,8 @@ body {
   background: radial-gradient(circle at bottom left, var(--color-test-0), var(--color-test-1) 50%, var(--color-test-2) 100%);
 }
 
+/*! Hero component */
+
 .hero {
   width: 100%;
   min-height: 100dvh;
@@ -193,6 +195,8 @@ body {
   filter: drop-shadow(5px 5px 10px var(--color-test-2));
 }
 
+/*! Title Bar component */
+
 .title-bar {
   width: 100%;
   min-height: 5rem;
@@ -253,6 +257,8 @@ body {
   }
 }
 
+/*! CallToAction component */
+
 .vue-section {
   width: 100%;
   height: var(--card-width);
@@ -291,6 +297,129 @@ body {
 .vue-link:hover {
   filter: drop-shadow(5px 5px 10px var(--color-test-0));
 }
+
+/*! Projects */
+
+.card-project {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.card-section {
+  width: 100%;
+  min-height: 100vh;
+  padding: 3rem 1.5rem;
+  margin-left: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-article {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: start;
+  gap: 2rem;
+  margin: 0 auto;
+}
+
+.card-box {
+  width: var(--card-width);
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  padding: 1rem;
+  border-radius: var(--radius-xl);
+  transition: transform 0.3s ease;
+  background-color: var(--graphite-shadow);
+  box-shadow: 1px 3px 10px var(--color-test-0);
+}
+
+.card-image {
+  width: var(--card-width);
+  height: 16rem;
+  object-fit: contain;
+  border-radius: 0.5rem;
+}
+
+.card-info {
+  width: 100%;
+  height: clamp(10rem, 15vh, 20rem);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+
+  & p#task-concept-card {
+    width: 100%;
+    max-height: 5rem;
+    padding: .5rem 0.25rem;
+    text-align: start;
+    text-overflow: clip;
+    font-size: 2.5rem;
+    font-style: italic;
+    font-weight: 900;
+    text-decoration: none;
+    color: var(--color-dark-text);
+    overflow: hidden;
+  }
+
+  & p#task-amount-card {
+    width: 100%;
+    height: 4rem;
+    font-size: 2rem;
+    font-weight: 900;
+    text-align: start;
+    text-wrap: wrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    padding: 0.25rem 0 1rem 0;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  & p#task-date-card {
+    width: 100%;
+    font-size: 1.2rem;
+    color: var(--color-light-2-text);
+    text-align: start;
+    padding: 0.5rem 0.25rem;
+  }
+}
+
+.linkbar-box {
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 0.5rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.linkbar-card {
+  width: 5rem;
+  min-width: fit-content;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 4px var(--color-test-0);
+}
+
+.linkbar-card:hover {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 8px var(--color-test-4);
+}
+
+/*! Contacto component */
 
 .contacto {
   width: 100%;
@@ -390,6 +519,7 @@ textarea:not(:placeholder-shown) {
 .contacto-btn {
   width: 50%;
   margin: 0 auto;
+  margin-bottom: 2rem;
   border: none;
   border-radius: var(--radius-xl);
   padding: 1rem .5rem;
@@ -418,13 +548,12 @@ a.contacto-link-ws:hover {
   background-color: #25D366;
 }
 
+/*! garbage collector CSS*/
+
 /* {
   /* w-full lg: w-1/2 mx-auto h-full flex items-center justify-center bg-cyan-400 text-2-color hover:text-1-color hover:bg-2-color text-2xl border-0 hover:bg-[#25D366] hover:text-slate-800 outline-none text-center */
 
-/*! garbage collector CSS*/
-
-
-/*? Media Queries */
+/*! Media Queries */
 
 @media screen and (width < 1080px) {
   .hero-box {
@@ -481,11 +610,15 @@ a.contacto-link-ws:hover {
     flex-wrap: wrap;
   }
 
-  .box-link-bar {
+  .card-section {
+    margin-left: 0;
+  }
+
+  .linkbar-box {
     width: 100%;
-    max-width: 1.3rem;
-    display: flex;
-    justify-content: center;
+    max-width: 1rem;
+    /* display: flex;
+    justify-content: center; */
   }
 
   .contacto-article {
@@ -500,122 +633,4 @@ a.contacto-link-ws:hover {
   }
 }
 
-.x-container {
-  width: 100%;
-  min-height: 100vh;
-  padding: 3rem 1.5rem;
-  margin: 0 auto;
-  gap: 3rem;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: start;
-  justify-content: start;
-  /* background-color: var(--color-x-bg); */
-
-}
-
-.box-card {
-  width: var(--card-width);
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  justify-content: center;
-  padding: 1rem;
-  border-radius: 0.5rem;
-  transition: transform 0.3s ease;
-  background-color: var(--graphite-shadow);
-  box-shadow: 1px 3px 10px var(--color-test-0);
-}
-
-.card-image {
-  width: var(--card-width);
-  height: 16rem;
-  object-fit: contain;
-  border-radius: 0.5rem;
-  /* background-color: var(--color-test-5); */
-  color: #2cc9ff;
-}
-
-/* .card-image-effect {
-
-  &:hover {
-    height: 50dvh;
-    transition: height 0.4s ease-in-out;
-    cursor: pointer;
-  }
-} */
-
-.card-info {
-  width: 100%;
-  height: clamp(10rem, 15vh, 20rem);
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: start;
-
-  & p#task-concept-card {
-    width: 100%;
-    max-height: 5rem;
-    padding: .5rem 0.25rem;
-    text-align: start;
-    text-overflow: clip;
-    font-size: 2.5rem;
-    font-style: italic;
-    font-weight: 900;
-    text-decoration: none;
-    color: var(--color-dark-text);
-    overflow: hidden;
-  }
-
-  & p#task-amount-card {
-    width: 100%;
-    height: 4rem;
-    font-size: 2rem;
-    font-weight: 900;
-    text-align: start;
-    text-wrap: wrap;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    padding: 0.25rem 0 1rem 0;
-
-    &:hover {
-      cursor: pointer;
-    }
-  }
-
-  & p#task-date-card {
-    width: 100%;
-    font-size: 1.2rem;
-    color: var(--color-light-2-text);
-    text-align: start;
-    padding: 0.5rem 0.25rem;
-  }
-}
-
-.box-link-bar {
-  width: 100%;
-  display: flex;
-  flex-wrap: nowrap;
-  gap: 0.5rem;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.link-bar-card {
-  width: 5rem;
-  min-width: fit-content;
-  height: 3rem;
-  display: flex;
-  align-items: center;
-  justify-content: start;
-  padding: 0.5rem;
-  border-radius: 0.5rem;
-  box-shadow: 0 2px 4px var(--color-test-0);
-}
-
-.link-bar-card:hover {
-  cursor: pointer;
-  transition: all 0.3s ease-in-out;
-  box-shadow: 0 4px 8px var(--color-test-4);
-}
+/* 16-JULIO-2.025 */

@@ -74,15 +74,16 @@ export const database: DataTech[] = [
 ]
 
 export const systems: DataTech[] = [
-    {
-    id: 0,
-    lang: "linux-ubuntu",
-    img: "/assets/techs/systems/1-Ubuntu.svg"
-  },
+
   {
-    id: 1,
+    id: 0,
     lang: "windows64",
     img: "/assets/techs/systems/3-Windows.svg"
+  },
+      {
+    id: 1,
+    lang: "linux-ubuntu",
+    img: "/assets/techs/systems/1-Ubuntu.svg"
   },
   {
     id: 2,
