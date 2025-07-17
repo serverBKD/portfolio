@@ -162,3 +162,12 @@ export const tasks: Tasks[] = [
     updatedAt: "2025-07-15T01:57:36.288Z",
   }
 ]
+
+export const LINK_WS = 'https://wa.me/+584124363214?text=Hola%20Por%20favor%20mas%20informacion%20sobre%20sus%20productos%20y%20servicios.'
+export const LINK_URL = 'https://tecnicoseguridad.vercel.app'
+export const LINK_ZERO = '/#contacto'
+export const LINK_INSTAGRAM = 'https://www.instagram.com/tecnicoseguridad.ve'
+export const LINK_FACEBOOK = 'https://facebook.com/tecnicoseguridad.ve'
+export const LINK_LINKEDIN = 'https://www.linkedin.com/company/tecnicoseguridad-ve'
+export const LINK_TWITTER = 'https://www.x.com/tecnicoseguridad.ve'
+
