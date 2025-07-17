@@ -104,15 +104,15 @@
   --naranja-valencia: #F15A29;
   --azul-oscuro: #1E2A38;
   --gris-humo: #E5E5E5;
-  /** Color Test Palette*/
-  --color-test-0: #B624F9;
+  /** Color Test Palette #B624F9*/
+  --color-test-0: #2cc9ff;
   --color-test-1: #222939;
   --color-test-2: #0b0e1b;
   --color-test-3: #e29e24;
   --color-test-4: #05719f;
   --color-test-5: #e55210;
   --color-test-6: #0f172a4d;
-  --color-test-7: #2cc9ff;
+  --color-test-7: #B624F9;
 
 }
 
@@ -124,7 +124,7 @@ body {
   color: var(--color-x-text);
   font-size: var(--font-size);
   padding: 0;
-  background: radial-gradient(circle at top right, var(--color-test-0), var(--color-test-1) 50%, var(--color-test-2) 100%);
+  background: radial-gradient(circle at bottom left, var(--color-test-0), var(--color-test-1) 50%, var(--color-test-2) 100%);
 }
 
 .hero {
@@ -197,7 +197,7 @@ body {
   padding: .3rem;
 
   & h1 {
-    color: var(--color-slate-900);
+    color: var(--color-slate-100);
     font-size: 3rem;
     font-weight: 900;
     font-style: italic;
