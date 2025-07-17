@@ -31,11 +31,17 @@ export const language: DataTech[] = [
     lang: "vuejs",
     img: "/assets/techs/langs/icons8-vuejs.svg"
   },
-  {
+    {
     id: 6,
+    lang: "astro.dev",
+    img: "/assets/techs/langs/astro-icon-light-gradient.svg"
+  },
+  {
+    id: 7,
     lang: "python",
     img: "/assets/techs/langs/icons8-python.svg"
   },
+  // astro-logo-light-gradient.svg
 ]
 
 export const database: DataTech[] = [
