@@ -31,19 +31,13 @@ export default function CardProject( { tasks } ) {
 						<div className='card-info'>
 							<p
 								id='task-concept-card'
-								style={ {
-									textDecoration: task?.completed
-										? 'line-through'
-										: 'none',
-								} }
 							>
 								{ task.concept }
 							</p>
 							<p
 								id='task-amount-card'
-								className={ `${ task.amount < 0 ? 'text-x-error' : ( task.amount > 0 ? 'text-x-color' : 'text-light-2-text' ) } ` }
 							>
-								USD({ task.amount === 0 ? '0' : task.amount })
+								Description of project
 							</p>
 							<p id='task-date-card'>{ task?.initAt }</p>
 						</div>
