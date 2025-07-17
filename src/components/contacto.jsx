@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import { useForm } from 'react-hook-form'
 // import { useRouter } from 'next/navigation'
-import { SVGInstagram, SVGFacebook, SVGLinkedin, SVGTwitter } from '@/constants/svg-repo.js'
+// import { SVGInstagram, SVGFacebook, SVGLinkedin, SVGTwitter } from '@/constants/svg-repo.js'
 import { LINK_INSTAGRAM, LINK_FACEBOOK, LINK_TWITTER, LINK_WS } from '@/constants/constants'
 
 export default function Contacto() {
@@ -123,7 +123,7 @@ export default function Contacto() {
 								target='_blank'
 								className='w-20 h-20 md:w-24 md:h-24 text-slate-100 hover:text-1-color hover:scale-105'
 							>
-								<SVGInstagram />
+								{/* <SVGInstagram /> */ }
 							</a>
 							{/* Link Facebook */ }
 							<a
@@ -132,7 +132,7 @@ export default function Contacto() {
 								rel='noopener noreferrer'
 								className='w-20 h-20 md:w-24 md:h-24 text-slate-100 hover:text-1-color hover:scale-105'
 							>
-								<SVGFacebook />
+								{/* <SVGFacebook /> */ }
 							</a>
 							<a
 								href={ LINK_TWITTER }
@@ -140,7 +140,7 @@ export default function Contacto() {
 								rel='noopener noreferrer'
 								className='w-20 h-20 md:w-24 md:h-24 text-slate-100 hover:text-1-color hover:scale-105'
 							>
-								<SVGTwitter />
+								{/* <SVGTwitter /> */ }
 							</a>
 							{/* Link Linkedin */ }
 							<a
@@ -149,7 +149,7 @@ export default function Contacto() {
 								rel='noopener noreferrer'
 								className='w-20 h-20 md:w-24 md:h-24 text-slate-100 hover:text-1-color hover:scale-105'
 							>
-								<SVGLinkedin />
+								{/* <SVGLinkedin /> */ }
 							</a>
 						</span>
 					</article>
