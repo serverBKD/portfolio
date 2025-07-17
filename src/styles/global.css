@@ -250,9 +250,53 @@ body {
   }
 }
 
-/* background-color: var(--color-test-0); */
+.vue-section {
+  width: 100%;
+  height: var(--card-width);
+  /*TODO magic constants*/
+  display: grid;
+  place-content: center;
+}
 
+.vue-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.vue-h1 {
+  font-weight: 900;
+  color: var(--color-test-5);
+}
+
+.vue-h2 {
+  max-width: 75%;
+  text-align: center;
+  color: var(--color-test-3);
+}
+
+.vue-link {
+  padding: 1.25rem 1rem;
+  border-radius: var(--radius-md);
+  background-color: #2cc9ff;
+  color: var(--color-test-2);
+  font-weight: 900;
+}
+
+.vue-link:hover {
+  filter: drop-shadow(5px 5px 10px var(--color-test-0));
+}
+
+/*! garbage collector CSS*/
+
+/* background-color: var(--color-test-0); */
 /* background-color: #0ccc26; */
+/* padding: .5rem; */
+/* display: grid;
+place-content: center; */
+
 /*? Media Queries */
 
 @media screen and (width < 1080px) {
@@ -317,10 +361,6 @@ body {
     justify-content: center;
   }
 }
-
-/* padding: .5rem; */
-/* display: grid;
-place-content: center; */
 
 .x-container {
   width: 100%;
