@@ -1,7 +1,11 @@
 ---
 import "../styles/global.css";
-import Hero from "@/components/Hero.jsx";
-import Technologies from "@/components/Technologies.jsx";
+import { language, database } from "@/constants/constants";
+
+import Hero from "@/components/Hero.tsx";
+import Technologies from "@/components/Technologies.tsx";
+import Titles from "@/components/Titles.tsx";
+import TitleBar from "@/components/TitleBar.tsx";
 ---
 
 <html lang="es">
@@ -14,12 +18,12 @@ import Technologies from "@/components/Technologies.jsx";
   </head>
 
   <body>
+    <TitleBar/>
 		<Hero/>
-    <Technologies/>
-    <!-- <section class="main">
-      <article>
-        <h1>sobre mí</h1>
-      </article>
-    </section> -->
+    <Titles title="Stack 2.025"/>
+    <Titles title="Lenguajes de Programación"/>
+    <Technologies data={language}/>
+    <Titles title="Bases de Datos"/>
+    <Technologies data={database}/>
   </body>
 </html>

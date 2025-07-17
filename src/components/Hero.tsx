@@ -5,7 +5,6 @@ export default function Hero() {
         <article className="hero-text">
           <h1>Carlos Manuel Bravo Araújo</h1>
           <h2>Desarrollador FullStack</h2>
-          <h3>JS | TypeScript | NodeJS | Python </h3>
           {/* <h4>about me</h4> */ }
           <p id="hero-text-p" >
             Soy desarrollador web apasionado por crear aplicaciones escalables, visualmente atractivas y con experiencias de usuario intuitivas. Trabajo principalmente con <span id="hero-span"> HTML5, CSS3, JS, Vue.js, Reactjs, Next.js, Node.js, y Python</span> integrando diseño estético y optimización técnica en cada proyecto.

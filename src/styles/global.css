@@ -92,7 +92,6 @@
   --font-size: 24px;
   --night-void: #0F0F1A;
   --graphite-shadow: #1E1E2E;
-  --electric-purple: #B624F9;
   --neon-ember: #FF6A90;
   --moonlight-mist: #D1D1E5;
   --fog-grey: #A8A8C3;
@@ -106,6 +105,7 @@
   --azul-oscuro: #1E2A38;
   --gris-humo: #E5E5E5;
   /** Color Test Palette*/
+  --color-test-0: #B624F9;
   --color-test-1: #222939;
   --color-test-2: #0b0e1b;
   --color-test-3: #e29e24;
@@ -124,7 +124,7 @@ body {
   color: var(--color-x-text);
   font-size: var(--font-size);
   padding: 0;
-  background: radial-gradient(circle at top right, var(--electric-purple), var(--color-test-1) 50%, var(--color-test-2) 100%);
+  background: radial-gradient(circle at top right, var(--color-test-0), var(--color-test-1) 50%, var(--color-test-2) 100%);
 }
 
 .hero {
@@ -172,7 +172,7 @@ body {
   color: var(--color-test-1);
   font-style: italic;
   font-weight: 800;
-  background: linear-gradient(to bottom right, var(--electric-purple) 40%, var(--color-test-7) 100%);
+  background: linear-gradient(to bottom right, var(--color-test-0) 40%, var(--color-test-7) 100%);
 }
 
 .hero-img {
@@ -190,8 +190,13 @@ body {
   filter: drop-shadow(5px 5px 10px var(--color-test-2));
 }
 
-
-
+.title-box {
+  width: 100%;
+  text-align: center;
+  padding: .3rem;
+  color: var(--color-slate-50);
+  font-weight: 800;
+}
 
 .techs {
   width: 100%;
@@ -219,12 +224,24 @@ body {
         width: 6rem;
         height: 6rem;
         object-fit: cover;
-        filter: drop-shadow(3px 2px 7.55px var(--electric-purple));
+        filter: drop-shadow(3px 2px 7.55px var(--color-test-0));
       }
     }
   }
 }
 
+.title-box {
+  width: 100%;
+
+  & h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    font-style: italic;
+    filter: drop-shadow(3px 2px 3.55px var(--color-test-4));
+  }
+}
+
+/* background-color: #0ccc26; */
 /*? Media Queries */
 
 @media screen and (width < 1080px) {
