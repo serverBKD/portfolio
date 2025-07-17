@@ -3,7 +3,7 @@
 import { useState } from 'react'
 import { useForm } from 'react-hook-form'
 // import { useRouter } from 'next/navigation'
-import { SVGInstagram, SVGFacebook, SVGLinkedin, SVGTwitter } from '@/services/svg-repo.js'
+import { SVGInstagram, SVGFacebook, SVGLinkedin, SVGTwitter } from '@/constants/svg-repo.js'
 import { LINK_INSTAGRAM, LINK_FACEBOOK, LINK_TWITTER, LINK_WS } from '@/constants/constants'
 
 export default function Contacto() {
