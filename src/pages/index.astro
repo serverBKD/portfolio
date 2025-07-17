@@ -1,6 +1,6 @@
 ---
 import "../styles/global.css";
-import { language, database } from "@/constants/constants";
+import { language, database, systems } from "@/constants/constants";
 
 import Hero from "@/components/Hero.tsx";
 import Technologies from "@/components/Technologies.tsx";
@@ -28,6 +28,8 @@ import Footer from "@/components/Footer.astro";
     <Technologies data={language}/>
     <Titles title="Bases de Datos"/>
     <Technologies data={database}/>
+    <Titles title="Sistemas"/>
+    <Technologies data={systems}/>
     <Titles title="Proyectos"/>
     <Projects/>
     <Footer/>

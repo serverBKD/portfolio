@@ -19,7 +19,7 @@ export const language: DataTech[] = [
   {
     id: 3,
     lang: "reactjs",
-    img: "/assets/techs/langs/icons8-react-native-96.png"
+    img: "/assets/techs/langs/icons-react-native-96.svg"
   },
   {
     id: 4,
@@ -59,9 +59,41 @@ export const database: DataTech[] = [
     lang: "mysql",
     img: "/assets/techs/db/icons8-mysql.svg"
   },
+    {
+    id: 4,
+    lang: "supabase",
+    img: "/assets/techs/db/supabase-logo-wordmark--dark.svg"
+  },
+  // supabase-logo-wordmark--dark.svg
 ]
 
-
+export const systems: DataTech[] = [
+    {
+    id: 0,
+    lang: "linux-ubuntu",
+    img: "/assets/techs/systems/1-Ubuntu.svg"
+  },
+  {
+    id: 1,
+    lang: "windows64",
+    img: "/assets/techs/systems/3-Windows.svg"
+  },
+  {
+    id: 2,
+    lang: "docker",
+    img: "/assets/techs/systems/11-Docker.svg"
+  },
+  {
+    id: 3,
+    lang: "git",
+    img: "/assets/techs/systems/1-git.svg"
+  },
+    {
+    id: 4,
+    lang: "odoo",
+    img: "/assets/techs/systems/10-Odoo.svg"
+  },
+]
 
 export const tasks: Tasks[] = [
   {
