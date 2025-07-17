@@ -1,4 +1,4 @@
-import type {DataTech} from '../types/types'
+import type {DataTech, Tasks} from '../types/types'
 
 export const language: DataTech[] = [
   {
@@ -61,3 +61,72 @@ export const database: DataTech[] = [
   },
 ]
 
+
+
+export const tasks: Tasks[] = [
+  {
+    id: 91,
+    concept: "socio",
+    notes: "",
+    amount: -12,
+    img: "",
+    completed: false,
+    debit: true,
+    initAt: "12JUL25",
+    source: "form-task",
+    createdAt: "2025-07-12T23:38:44.531Z",
+    updatedAt: "2025-07-12T23:38:44.531Z",
+  },
+  {
+    id: 92,
+    concept: "reactNative",
+    notes: null,
+    amount: 0,
+    img: "",
+    completed: false,
+    debit: false,
+    initAt: "12JUL25",
+    source: "form-task",
+    createdAt: "2025-07-13T03:44:51.172Z",
+    updatedAt: "2025-07-13T03:44:51.172Z"
+  },
+  {
+    id: 93,
+    concept: "Nnejj",
+    notes: null,
+    amount: 0,
+    img: "",
+    completed: true,
+    debit: false,
+    initAt: "13JUL25",
+    source: "form-task",
+    createdAt: "2025-07-13T05:16:23.783Z",
+    updatedAt: "2025-07-13T05:16:31.499Z",
+  },
+  {
+    id: 89,
+    concept: "te amo",
+    notes: null,
+    amount: 0,
+    img: "https://firebasestorage.googleapis.com/v0/b/serverbkd-trifaxic-ts.appspot.com/o/tasks-t8%2Ftasks-app-1752363255221-formTask-hanyu-logo.jpeg?alt=media&token=b0d06b3c-fafe-4954-a063-821c3c13808d",
+    completed: true,
+    debit: false,
+    initAt: "12JUL25",
+    source: "form-task",
+    createdAt: "2025-07-12T23:34:18.730Z",
+    updatedAt: "2025-07-13T05:16:38.480Z",
+  },
+  {
+    id: 94,
+    concept: "kara sevda",
+    notes: null,
+    amount: 0,
+    img: "",
+    completed: false,
+    debit: false,
+    initAt: "14JUL25",
+    source: "form-task",
+    createdAt: "2025-07-15T01:57:36.288Z",
+    updatedAt: "2025-07-15T01:57:36.288Z",
+  }
+]

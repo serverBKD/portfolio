@@ -5,3 +5,18 @@ export interface DataTech {
 }
 
 export type Title = string | null
+
+
+export interface Tasks {
+    id: number
+    concept: string
+    notes: string | null
+    amount: number
+    img: string
+    completed: boolean
+    debit: boolean
+    initAt: string
+    source: string
+    createdAt: string
+    updatedAt: string
+}
