@@ -396,9 +396,11 @@ body {
   width: 100%;
   display: flex;
   flex-wrap: nowrap;
-  gap: 0.5rem;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-evenly;
+  gap: 0.5rem;
+  margin-top: .5rem;
+  /* background-color: var(--color-test-5); */
 }
 
 .linkbar-card {
@@ -407,16 +409,37 @@ body {
   height: 3rem;
   display: flex;
   align-items: center;
-  justify-content: start;
+  justify-content: space-around;
   padding: 0.5rem;
-  border-radius: 0.5rem;
+  border-radius: var(--radius-md);
+  outline: .2rem solid var(--color-test-8);
   box-shadow: 0 2px 4px var(--color-test-0);
+  transition: .4s hover ease-in-out;
 }
 
 .linkbar-card:hover {
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+  background-color: var(--color-test-7);
   box-shadow: 0 4px 8px var(--color-test-4);
+}
+
+.linkbar-items-1:hover {
+  background-color: var(--color-test-0);
+  color: var(--color-test-1);
+  outline-color: var(--color-test-0);
+}
+
+.linkbar-items-2:hover {
+  background-color: var(--color-test-5);
+  color: var(--color-test-1);
+  outline-color: var(--color-test-5);
+}
+
+.linkbar-items-3:hover {
+  background-color: var(--color-test-7);
+  color: var(--color-test-1);
+  outline-color: var(--color-test-7);
 }
 
 /*! Contacto component */
@@ -553,7 +576,7 @@ a.contacto-link-ws:hover {
 /* {
   /* w-full lg: w-1/2 mx-auto h-full flex items-center justify-center bg-cyan-400 text-2-color hover:text-1-color hover:bg-2-color text-2xl border-0 hover:bg-[#25D366] hover:text-slate-800 outline-none text-center */
 
-/*! Media Queries */
+/*TODO Media Queries */
 
 @media screen and (width < 1080px) {
   .hero-box {
@@ -616,9 +639,6 @@ a.contacto-link-ws:hover {
 
   .linkbar-box {
     width: 100%;
-    max-width: 1rem;
-    /* display: flex;
-    justify-content: center; */
   }
 
   .contacto-article {
