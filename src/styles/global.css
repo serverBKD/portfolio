@@ -189,67 +189,6 @@ body {
   filter: drop-shadow(5px 5px 9px var(--color-test-1));
 }
 
-/*! Title Bar component */
-
-.title-bar {
-  width: 100%;
-  min-height: 2rem;
-  text-align: center;
-  padding: .3rem;
-  margin-top: 1.5rem;
-
-  & h1 {
-    color: var(--color-slate-100);
-    font-size: 3rem;
-    font-weight: 900;
-    font-style: italic;
-  }
-}
-
-.title-box {
-  width: 70%;
-  padding-left: 2rem;
-  margin: 0 auto;
-
-  & h1 {
-    font-size: 2rem;
-    font-weight: bold;
-    font-style: italic;
-    filter: drop-shadow(3px 2px 3.55px var(--color-test-4));
-  }
-}
-
-.techs {
-  width: 100%;
-  min-height: 16rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  article {
-    width: 1080px;
-    min-height: 12rem;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    gap: .5rem;
-
-    div {
-      width: 9rem;
-      height: 9rem;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      img {
-        width: 6rem;
-        height: 6rem;
-        object-fit: contain;
-        filter: drop-shadow(3px 5px 1.5px var(--color-test-1)) drop-shadow(.11px 7px 9px var(--color-test-0));
-      }
-    }
-  }
-}
 
 /*! CallToAction component */
 
@@ -290,6 +229,40 @@ body {
 
 .vue-link:hover {
   filter: drop-shadow(5px 5px 10px var(--color-test-0));
+}
+
+/*! TECHNICALS */
+
+.techs {
+  width: 100%;
+  min-height: 16rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  article {
+    width: 1080px;
+    min-height: 12rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: .5rem;
+
+    div {
+      width: 6rem;
+      height: 6rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      img {
+        width: 4rem;
+        height: 4rem;
+        object-fit: contain;
+        filter: drop-shadow(3px 5px 1.5px var(--color-test-1)) drop-shadow(.11px 7px 9px var(--color-test-0));
+      }
+    }
+  }
 }
 
 /*! Projects */
@@ -385,6 +358,39 @@ body {
     padding: 0.5rem 0.25rem;
   }
 }
+
+
+/*! Title Bar component */
+
+.title-bar {
+  width: 100%;
+  min-height: 2rem;
+  text-align: center;
+  padding: .3rem;
+  margin-top: 1.5rem;
+
+  & h1 {
+    color: var(--color-slate-100);
+    font-size: 3rem;
+    font-weight: 900;
+    font-style: italic;
+  }
+}
+
+.title-box {
+  width: 70%;
+  padding-left: 2rem;
+  margin: 0 auto;
+
+  & h1 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    font-style: italic;
+    filter: drop-shadow(3px 2px 3.55px var(--color-test-4));
+  }
+}
+
+/*! LinkBar TOP */
 
 .linkbar-box {
   width: 100%;
