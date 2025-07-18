@@ -1,31 +1,37 @@
 export default function Hero() {
-  return (
-    <section className="hero">
-      <section className="hero-box flex">
-        <article className="hero-text">
-          <h1>JS | TypeScript | NodeJS | Python</h1>
-          <h2>Desarrollador FullStack</h2>
-          {/* <h4>about me</h4> */ }
-          <p id="hero-text-p" >
-            Soy desarrollador web apasionado por crear aplicaciones escalables, visualmente atractivas y con experiencias de usuario intuitivas. Trabajo principalmente con <span id="hero-span"> HTML5, CSS3, JS, Vue.js, Reactjs, Next.js, Node.js, y Python</span> integrando diseño estético y optimización técnica en cada proyecto.
-          </p>
-        </article>
-        <article className="hero-img">
-          <img
-            src="./assets/avatar/avatar-cmba.png"
-            alt="cmba-photo-cv-about-me"
-            width={ 1080 }
-            height={ 960 }
-            loading="lazy"
-            decoding="async"
-            id="img-avatar"
-          />
-        </article>
-      </section>
-    </section>
-  );
+	return (
+		<section className="hero">
+			<section className="hero-box flex">
+				<article className="hero-img ">
+					<img
+						src="./assets/avatar/avatar-cmba.png"
+						alt="cmba-photo-cv-about-me"
+						width={1080}
+						height={960}
+						loading="lazy"
+						decoding="async"
+						id="img-avatar"
+					/>
+				</article>
+				<article className="hero-text">
+					<h1>JS | TypeScript | NodeJS | Python</h1>
+					<h2>Desarrollador FullStack</h2>
+					{/* <h4>about me</h4> */}
+					<p id="hero-text-p">
+						Soy desarrollador web apasionado por crear aplicaciones escalables,
+						visualmente atractivas y con experiencias de usuario intuitivas.
+						Trabajo principalmente con{" "}
+						<span id="hero-span">
+							{" "}
+							HTML5, CSS3, JS, Vue.js, Reactjs, Next.js, Node.js, y Python
+						</span>{" "}
+						integrando diseño estético y optimización técnica en cada proyecto.
+					</p>
+				</article>
+			</section>
+		</section>
+	);
 }
-
 
 // <p>
 //   About Me
