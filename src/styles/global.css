@@ -125,7 +125,7 @@ body {
   color: var(--color-test-8);
   font-size: var(--font-size);
   padding: 0;
-  background: radial-gradient(circle at bottom left, var(--color-test-0), var(--color-test-1) 50%, var(--color-test-2) 100%);
+  background: linear-gradient(to bottom, var(--color-test-2) 0%, var(--color-test-1) 80%, var(--color-test-4) 100%);
 }
 
 /*! Hero component */
