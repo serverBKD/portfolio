@@ -1,8 +1,16 @@
+<script setup>
+// import { ref } from "vue";
+import { LINK_WS } from "@/constants/constants.ts";
+
+const LINKWS = LINK_WS;
+</script>
+
+
 <template>
-  <section class="ws-btn">
-      <a href="https://api.whatsapp.com/send?phone=5491131234567&text=Hola%20cmba,%20me%20gustaría%20contactarte"
+  <section >
+      <a :href="LINKWS"
         target="_blank" rel="noopener noreferrer">
-        <span></span>
+        <span class="ws-btn"></span>
       </a>
   </section>
 </template>
