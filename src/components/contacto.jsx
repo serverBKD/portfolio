@@ -110,7 +110,7 @@ export default function Contacto() {
 						¡Pronto un asesor se pondrá en contacto!
 					</p> }
 
-				<div className='div-btn'>
+				{/* <div className='div-btn'>
 					<a
 						href={ LINK_WS }
 						target='_blank'
@@ -119,7 +119,7 @@ export default function Contacto() {
 					>
 						WhatsApp
 					</a>
-				</div>
+				</div> */}
 			</article >
 		</section >
 	)

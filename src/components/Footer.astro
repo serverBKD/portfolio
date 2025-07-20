@@ -4,7 +4,6 @@
   <button id="scroll-top-btn" type="button">
     <img src="/assets/techs/icons/arrow-up-337-svgrepo-com.svg" alt="arrow-up" />
   </button>
-
   <script type="module">
     const btn = document.getElementById("scroll-top-btn");
     btn?.addEventListener("click", () => {
@@ -12,32 +11,3 @@
     });
   </script>
 </footer>
-
-<style>
-  footer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-    width: 100%;
-    height: auto;
-    text-align: center;
-    color: var(--color-test-2);
-  }
-
-  footer h1 {
-    font-size: 1.3rem;
-    font-weight: 600;
-  }
-
-  footer img {
-    width: 50px;
-    height: 30px;
-  }
-
-  footer img:hover{
-      background-color:  var(--color-test-7);
-      border-radius: var(--radius-lg);
-      cursor: pointer;
-  }
-</style>
