@@ -129,8 +129,8 @@ body {
 }
 
 .ws-btn {
-  width: 4rem;
-  height: 4rem;
+  width: 6rem;
+  height: 6rem;
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -138,7 +138,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url('assets/techs/icons/whatsapp.svg');
+  background-image: url('assets/techs/icons/whatsapp-svgrepo-com.svg');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -146,6 +146,11 @@ body {
   animation: both fadeIn 1s ease-in-out;
   animation-timeline: scroll(root);
   animation-range: 0% 640px;
+}
+
+.ws-btn:hover {
+  cursor: pointer;
+  filter: drop-shadow(5px 5px 10px var(--color-test-7));
 }
 
 @keyframes fadeIn {
@@ -222,7 +227,7 @@ body {
 
 /*! CallToAction component */
 
-.vue-section {
+.cta-section {
   width: 100%;
   height: var(--card-width);
   /*TODO magic constants*/
@@ -230,7 +235,7 @@ body {
   place-content: center;
 }
 
-.vue-div {
+.cta-div {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -238,27 +243,28 @@ body {
   gap: 1rem;
 }
 
-.vue-h1 {
+.cta-h1 {
   font-weight: 900;
   color: var(--color-test-5);
 }
 
-.vue-h2 {
+.cta-h2 {
   max-width: 75%;
   text-align: center;
   color: var(--color-test-3);
 }
 
-.vue-link {
+.cta-link {
   padding: 1.25rem 1rem;
   border-radius: var(--radius-md);
-  background-color: #2cc9ff;
+  background-color: var(--color-test-0);
   color: var(--color-test-2);
   font-weight: 900;
 }
 
-.vue-link:hover {
-  filter: drop-shadow(5px 5px 10px var(--color-test-0));
+.cta-link:hover {
+  background-color: var(--color-test-7);
+  filter: drop-shadow(5px 5px 10px var(--color-test-7));
 }
 
 /*! TECHNICALS */
@@ -572,7 +578,7 @@ textarea:not(:placeholder-shown) {
   border: none;
   border-radius: var(--radius-xl);
   padding: 1rem .5rem;
-  background-color: var(--color-test-7);
+  background-color: var(--color-test-0);
   transition: .5s all ease-in-out;
   color: var(--color-test-2);
   word-spacing: .92rem;
@@ -584,7 +590,7 @@ textarea:not(:placeholder-shown) {
 .contacto-btn:hover {
   cursor: pointer;
   filter: drop-shadow(5px 5px 10px var(--color-test-7));
-  background-color: var(--color-test-0);
+  background-color: var(--color-test-7);
 }
 
 a.contacto-link-ws {
