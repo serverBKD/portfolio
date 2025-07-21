@@ -1,106 +1,105 @@
-import type {DataTech, Tasks} from '../types/types'
+import type { DataTech, Tasks } from "../types/types";
 
 export const language: DataTech[] = [
   {
     id: 0,
     lang: "javascript",
-    img: "/assets/techs/langs/icons8-js.svg"
+    img: "/assets/techs/langs/icons8-js.svg",
   },
   {
     id: 1,
     lang: "typescript",
-    img: "/assets/techs/langs/icons8-typescript.svg"
+    img: "/assets/techs/langs/icons8-typescript.svg",
   },
   {
     id: 2,
     lang: "nodejs",
-    img: "/assets/techs/langs/icons8-nodejs.svg"
+    img: "/assets/techs/langs/icons8-nodejs.svg",
   },
   {
     id: 3,
     lang: "reactjs",
-    img: "/assets/techs/langs/icons-react-native-96.svg"
+    img: "/assets/techs/langs/icons-react-native-96.svg",
   },
   {
     id: 4,
     lang: "nextjs",
-    img: "/assets/techs/langs/icons8-nextjs.svg"
+    img: "/assets/techs/langs/icons8-nextjs.svg",
   },
   {
     id: 5,
     lang: "vuejs",
-    img: "/assets/techs/langs/icons8-vuejs.svg"
+    img: "/assets/techs/langs/icons8-vuejs.svg",
   },
-    {
+  {
     id: 6,
     lang: "astro.dev",
-    img: "/assets/techs/langs/astro-icon-light-gradient.svg"
+    img: "/assets/techs/langs/astro-icon-light-gradient.svg",
   },
   {
     id: 7,
     lang: "python",
-    img: "/assets/techs/langs/icons8-python.svg"
+    img: "/assets/techs/langs/icons8-python.svg",
   },
   // astro-logo-light-gradient.svg
-]
+];
 
 export const database: DataTech[] = [
   {
     id: 0,
     lang: "firebase",
-    img: "/assets/techs/db/icons8-firebase-96.png"
+    img: "/assets/techs/db/icons8-firebase-96.png",
   },
   {
     id: 1,
     lang: "postgresql",
-    img: "/assets/techs/db/icons8-postgresql-96.png"
+    img: "/assets/techs/db/icons8-postgresql-96.png",
   },
   {
     id: 2,
     lang: "mongodb",
-    img: "/assets/techs/db/icons8-mongodb-96.png"
+    img: "/assets/techs/db/icons8-mongodb-96.png",
   },
   {
     id: 3,
     lang: "mysql",
-    img: "/assets/techs/db/icons8-mysql.svg"
+    img: "/assets/techs/db/icons8-mysql.svg",
   },
-    {
+  {
     id: 4,
     lang: "supabase",
-    img: "/assets/techs/db/supabase-logo-wordmark--dark.svg"
+    img: "/assets/techs/db/supabase-logo-wordmark--dark.svg",
   },
   // supabase-logo-wordmark--dark.svg
-]
+];
 
 export const systems: DataTech[] = [
-
   {
     id: 0,
     lang: "windows64",
-    img: "/assets/techs/systems/3-Windows.svg"
+    img: "/assets/techs/systems/3-Windows.svg",
   },
-      {
+  {
     id: 1,
     lang: "linux-ubuntu",
-    img: "/assets/techs/systems/1-Ubuntu.svg"
+    img: "/assets/techs/systems/1-Ubuntu.svg",
   },
   {
     id: 2,
     lang: "docker",
-    img: "/assets/techs/systems/11-Docker.svg"
+    img: "/assets/techs/systems/11-Docker.svg",
   },
   {
     id: 3,
     lang: "git",
-    img: "/assets/techs/systems/1-git.svg"
+    img: "/assets/techs/systems/1-git.svg",
   },
-    {
+  {
     id: 4,
     lang: "odoo",
-    img: "/assets/techs/systems/10-Odoo.svg"
+    img: "/assets/techs/systems/10-Odoo.svg",
   },
-]
+];
 
 export const tasks: Tasks[] = [
   {
@@ -127,7 +126,7 @@ export const tasks: Tasks[] = [
     initAt: "12JUL25",
     source: "form-task",
     createdAt: "2025-07-13T03:44:51.172Z",
-    updatedAt: "2025-07-13T03:44:51.172Z"
+    updatedAt: "2025-07-13T03:44:51.172Z",
   },
   {
     id: 93,
@@ -167,14 +166,17 @@ export const tasks: Tasks[] = [
     source: "form-task",
     createdAt: "2025-07-15T01:57:36.288Z",
     updatedAt: "2025-07-15T01:57:36.288Z",
-  }
-]
+  },
+];
 
-export const LINK_WS = 'https://wa.me/+584124363214?text=Hola%20Por%20favor%20mas%20informacion%20sobre%20sus%20productos%20y%20servicios.'
-export const LINK_URL = 'https://tecnicoseguridad.vercel.app'
-export const LINK_ZERO = '/#contacto'
-export const LINK_INSTAGRAM = 'https://www.instagram.com/tecnicoseguridad.ve'
-export const LINK_FACEBOOK = 'https://facebook.com/tecnicoseguridad.ve'
-export const LINK_LINKEDIN = 'https://www.linkedin.com/company/tecnicoseguridad-ve'
-export const LINK_TWITTER = 'https://www.x.com/tecnicoseguridad.ve'
+export const LINK_WS =
+  "https://wa.me/+584124363214?text=Hola%20Por%20favor%20mas%20informacion%20sobre%20sus%20productos%20y%20servicios.";
+export const LINK_URL = "https://tecnicoseguridad.vercel.app";
+export const LINK_ZERO = "/#contacto";
+export const LINK_INSTAGRAM = "https://www.instagram.com/tecnicoseguridad.ve";
+export const LINK_FACEBOOK = "https://facebook.com/tecnicoseguridad.ve";
+export const LINK_LINKEDIN =
+  "https://www.linkedin.com/company/tecnicoseguridad-ve";
+export const LINK_TWITTER = "https://www.x.com/tecnicoseguridad.ve";
 
+export const LINK_API_LIST_EMAIL_DEV = "http://127.0.0.1:4000/api/listemail/";

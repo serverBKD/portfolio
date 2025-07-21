@@ -11,20 +11,22 @@ export default function Contacto() {
 		register,
 		handleSubmit,
 		formState: { errors },
-	} = useForm<ContactFormData>({});
+	} = useForm<ContactFormData>( {} );
+
+	type responseAPI = {
+		response?: string | undefined;
+		status: number
+	};
 
 	const onSubmit = handleSubmit(async (data: ContactFormData) => {
-		setSended(true);
 		const payload: ContactFormData = {
 			...data,
 			source: "form-contacto-portfolio",
 		};
-		console.log({ payload });
-		const formData = new FormData();
-		Object.entries(payload).forEach(([key, value]) => {
-			formData.append(key, value as string);
-		});
-		await FetchData(formData);
+		const response = await FetchData(payload);
+		const responseAPI: responseAPI = response ?? { response: undefined, status: 500 };
+		console.log(responseAPI.status, responseAPI.response);
+		setSended(true);
 	});
 
 	return (

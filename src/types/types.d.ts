@@ -26,3 +26,11 @@ export type ContactFormData = {
   message: string;
   source?: string;
 };
+
+// src/env.d.ts
+interface ImportMetaEnv {
+  readonly PUBLIC_API_URL: string;
+}
+interface ImportMeta {
+  readonly env: ImportMetaEnv;
+}
