@@ -55,41 +55,24 @@
 /* @mixin flex-center {} */
 
 :root {
-  --radius: 0.625rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
-  --chart-1: oklch(0.646 0.222 41.116);
-  --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
-  --chart-4: oklch(0.828 0.189 84.429);
-  --chart-5: oklch(0.769 0.188 70.08);
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
   /* mis variables */
   --font-sans: "Montserrat-Regular", sans-serif;
   --font-size: 24px;
+  --card-width: 393px;
+  --radius: 8px;
+
+  /** Color Test Palette #B624F9*/
+  --color-test-0: #2cc9ff;
+  --color-test-1: #222939;
+  --color-test-2: #0b0e1b;
+  --color-test-3: #e29e24;
+  --color-test-4: #05719f;
+  --color-test-5: #e55210;
+  --color-test-6: #0f172a4d;
+  --color-test-7: #B624F9;
+  --color-test-8: #D1D1E5;
+
+  /* mis colores */
   --night-void: #0F0F1A;
   --graphite-shadow: #1E1E2E;
   --neon-ember: #FF6A90;
@@ -104,16 +87,7 @@
   --naranja-valencia: #F15A29;
   --azul-oscuro: #1E2A38;
   --gris-humo: #E5E5E5;
-  /** Color Test Palette #B624F9*/
-  --color-test-0: #2cc9ff;
-  --color-test-1: #222939;
-  --color-test-2: #0b0e1b;
-  --color-test-3: #e29e24;
-  --color-test-4: #05719f;
-  --color-test-5: #e55210;
-  --color-test-6: #0f172a4d;
-  --color-test-7: #B624F9;
-  --color-test-8: #D1D1E5;
+
 
 }
 
@@ -307,25 +281,27 @@ body {
 .card-project {
   width: 75%;
   margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: var(--color-test-3); */
 }
 
 .card-section {
   width: 100%;
   min-height: 100vh;
-  padding: 3rem 1.5rem;
-  margin-left: 4rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  margin: 0 auto;
 }
 
 .card-article {
+  width: 100%;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: start;
-  gap: 2rem;
+  gap: 1rem .75rem;
   margin: 0 auto;
+  /* background-color: var(--color-test-7); */
 }
 
 .card-box {
@@ -334,11 +310,12 @@ body {
   flex-direction: column;
   align-items: start;
   justify-content: center;
-  padding: 1rem;
+  padding: 2rem 1rem;
+  /* margin: 3rem 2rem; */
   border-radius: var(--radius-xl);
   transition: transform 0.3s ease;
   background-color: var(--graphite-shadow);
-  box-shadow: 1px 3px 10px var(--color-test-0);
+  box-shadow: 3px 3px 13px var(--color-test-7);
 }
 
 .card-image {
@@ -704,17 +681,14 @@ footer img:hover {
     flex-wrap: wrap;
   }
 
-  .card-section {
-    margin-left: 0;
+  .card-project {
+    width: 50%;
+    margin: 0 2rem;
   }
 
-  .linkbar-box {
-    width: 100%;
-  }
+  .card-article {
 
-  .contacto-article {
-    width: 100%;
-    /* min-width: 100dvw; */
+    gap: 2rem 1rem;
   }
 
   .contacto-form {
@@ -723,6 +697,38 @@ footer img:hover {
     /* max-width: var(--card-width); */
   }
 
+  .linkbar-box {
+    width: 100%;
+  }
+
+  .cta-section {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .cta-div {
+    margin: 0 auto;
+  }
+
+  .ws-btn {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .ws-btn:hover {
+    scale: 1.5;
+  }
+
+  footer {
+    width: 70%;
+    margin: 0 auto;
+    margin-bottom: 3rem;
+    flex-direction: column;
+    gap: .1rem;
+    color: var(--color-test-8);
+    font-weight: 900;
+  }
 
 }
 
