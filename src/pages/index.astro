@@ -1,6 +1,6 @@
 ---
 import "../styles/global.css";
-import { language, database, systems, pass } from "@/constants/constants";
+import { language, database, systems, pass, mentors } from "@/constants/constants";
 
 import Hero from "@/components/Hero.tsx";
 import Technologies from "@/components/Technologies.tsx";
@@ -34,11 +34,13 @@ import WSButton from "@/components/WSButton.vue";
     <Titles title="Bases de Datos" />
     <Technologies data={database} />
     <CallToAction />
-    <Titles title="Plataform as a Service" />
+    <Titles title="Platform as a Service" />
     <Technologies data={pass} />
     <Titles title="Sistemas" />
     <Technologies data={systems} />
     <Contacto client:load />
+    <Titles title="Mentors" />
+    <Technologies data={mentors} />
     <Footer />
   </body>
 </html>

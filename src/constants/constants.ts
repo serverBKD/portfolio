@@ -179,6 +179,25 @@ export const pass: DataTech[] = [
   // },
 ];
 
+export const mentors: DataTech[] = [
+  {
+    id: 0,
+    lang: "fatz code",
+    img: "/assets/techs/mentors/fazttech-logo-white.webp",
+  },
+
+  {
+    id: 1,
+    lang: "hector de leon",
+    img: "/assets/techs/mentors/cropped-logo.png",
+  },
+  {
+    id: 2,
+    lang: "midudev",
+    img: "/assets/techs/mentors/midudev.svg",
+  },
+];
+
 export const tasks: Tasks[] = [
   {
     id: 91,
