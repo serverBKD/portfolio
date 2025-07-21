@@ -1,22 +1,18 @@
-// @ts-check
 import { defineConfig } from 'astro/config';
 import tailwindcss from '@tailwindcss/vite';
-
 import react from '@astrojs/react';
-
 import vue from '@astrojs/vue';
+import netlify from '@astrojs/netlify';
+import vercel from '@astrojs/vercel';
 
-import node from '@astrojs/node';
+// Detecta entorno por variable
+const target = process.env.DEPLOY_TARGET || 'netlify';
 
-// https://astro.build/config
+const adapter = target === 'vercel' ? vercel() : netlify();
+
 export default defineConfig({
-  vite: {
-      plugins: [tailwindcss()]
-    },
-
+  output: 'server',
   integrations: [react(), vue()],
-
-  adapter: node({
-    mode: 'standalone'
-  })
+  vite: { plugins: [tailwindcss()] },
+  adapter
 });
