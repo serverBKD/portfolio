@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@astrojs/mdx": "^4.3.0",
+    "@astrojs/node": "^9.3.0",
     "@astrojs/react": "^4.3.0",
     "@astrojs/vue": "^5.1.0",
     "@dicebear/big-smile": "^9.2.3",
