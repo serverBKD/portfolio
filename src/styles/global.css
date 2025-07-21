@@ -135,7 +135,7 @@ body {
 
   & h1,
   h2 {
-    max-width: calc(var(--card-width) - 2rem);
+    /* max-width: calc(var(--card-width) - 2rem); */
     color: var(--color-test-8);
     font-size: 2rem;
     font-weight: 800;
@@ -143,19 +143,19 @@ body {
   }
 
   & p {
-    font-size: 1.255rem;
-    max-width: 75%;
+    font-size: 1.5rem;
+    /* max-width: 75%; */
     font-weight: var(--font-weight);
     margin-top: 1rem;
   }
 }
 
 #hero-span {
-  padding: .18rem 1rem;
-  color: var(--color-test-2);
-  font-style: italic;
+  padding: .2rem .4rem;
+  color: var(--color-test-8);
+  font-style: oblique;
   font-weight: 800;
-  background: linear-gradient(to top right, var(--color-test-8) 0%, var(--color-test-2) 100%);
+  background: linear-gradient(to top right, var(--color-test-0) 0%, var(--color-test-2) 100%);
 }
 
 #img-avatar {
@@ -359,7 +359,7 @@ body {
     font-size: 1.25rem;
     font-weight: bold;
     font-style: italic;
-    filter: drop-shadow(3px 2px 3.55px var(--color-test-7));
+    filter: drop-shadow(3px 2px 3.55px var(--color-test-5));
   }
 }
 
@@ -615,8 +615,9 @@ footer img:hover {
     }
 
     & p {
+      width: 100%;
       text-align: center;
-      /* padding: 1rem 3rem; */
+      padding: 1rem 3rem;
     }
   }
 
@@ -642,12 +643,6 @@ footer img:hover {
   .card-project {
     width: 100%;
   }
-
-  /* .card-article {
-    margin: 0 auto;
-
-    gap: 2rem 1rem;
-  } */
 
   .linkbar-box {
     width: 100%;
