@@ -1,6 +1,6 @@
 ---
 import "../styles/global.css";
-import { language, database, systems } from "@/constants/constants";
+import { language, database, systems, pass } from "@/constants/constants";
 
 import Hero from "@/components/Hero.tsx";
 import Technologies from "@/components/Technologies.tsx";
@@ -13,7 +13,6 @@ import Contacto from "@/components/Contacto.jsx";
 import WSButton from "@/components/WSButton.vue";
 ---
 
-
 <html lang="es">
   <head>
     <meta charset="utf-8" />
@@ -24,25 +23,27 @@ import WSButton from "@/components/WSButton.vue";
   </head>
 
   <body>
-    <TitleBar/>
-		<Hero/>
-    <WSButton/>
-    <Titles title="Stack 2.025"/>
-    <Titles title="Lenguajes de Programación"/>
-    <Technologies data={language}/>
-    <Titles title="Bases de Datos"/>
-    <Technologies data={database}/>
-    <Titles title="Sistemas"/>
-    <Technologies data={systems}/>
-    <CallToAction/>
-    <Titles title="Proyectos"/>
-    <Projects/>
+    <TitleBar />
+    <Hero />
+    <WSButton />
+    <Titles title="Proyectos" />
+    <Projects />
+    <Titles title="Stack 2.025" />
+    <Titles title="Lenguajes de Programación" />
+    <Technologies data={language} />
+    <Titles title="Bases de Datos" />
+    <Technologies data={database} />
+    <CallToAction />
+    <Titles title="Plataform as a Service" />
+    <Technologies data={pass} />
+    <Titles title="Sistemas" />
+    <Technologies data={systems} />
     <Contacto client:load />
-    <Footer/>
+    <Footer />
   </body>
-  </html>
+</html>
 
-  <!-- <CallToAction/> -->
+<!-- <CallToAction/> -->
 <!-- TODO : 17 JUL 2025
 1.- Section para Canales YT: FaztCode + Midudev
 

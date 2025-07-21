@@ -3,43 +3,73 @@ import type { DataTech, Tasks } from "../types/types";
 export const language: DataTech[] = [
   {
     id: 0,
+    lang: "html5",
+    img: "/assets/techs/langs/html5.svg",
+  },
+  {
+    id: 1,
+    lang: "css3",
+    img: "/assets/techs/langs/css.svg",
+  },
+  {
+    id: 2,
     lang: "javascript",
     img: "/assets/techs/langs/icons8-js.svg",
   },
   {
-    id: 1,
+    id: 3,
     lang: "typescript",
     img: "/assets/techs/langs/icons8-typescript.svg",
   },
   {
-    id: 2,
+    id: 4,
     lang: "nodejs",
     img: "/assets/techs/langs/icons8-nodejs.svg",
   },
   {
-    id: 3,
+    id: 5,
     lang: "reactjs",
     img: "/assets/techs/langs/icons-react-native-96.svg",
   },
   {
-    id: 4,
+    id: 6,
     lang: "nextjs",
     img: "/assets/techs/langs/icons8-nextjs.svg",
   },
   {
-    id: 5,
+    id: 7,
     lang: "vuejs",
     img: "/assets/techs/langs/icons8-vuejs.svg",
   },
   {
-    id: 6,
+    id: 8,
     lang: "astro.dev",
     img: "/assets/techs/langs/astro-icon-light-gradient.svg",
   },
   {
-    id: 7,
+    id: 9,
     lang: "python",
     img: "/assets/techs/langs/icons8-python.svg",
+  },
+  {
+    id: 10,
+    lang: "vitejs",
+    img: "/assets/techs/langs/vitejs.svg",
+  },
+  {
+    id: 11,
+    lang: "playwright",
+    img: "/assets/techs/langs/playwright.svg",
+  },
+  {
+    id: 12,
+    lang: "expo",
+    img: "/assets/techs/langs/expo.svg",
+  },
+  {
+    id: 13,
+    lang: "tailwindcss",
+    img: "/assets/techs/langs/tailwindcss.svg",
   },
   // astro-logo-light-gradient.svg
 ];
@@ -70,6 +100,11 @@ export const database: DataTech[] = [
     lang: "supabase",
     img: "/assets/techs/db/supabase-logo-wordmark--dark.svg",
   },
+  {
+    id: 5,
+    lang: "sqlite",
+    img: "/assets/techs/db/sqlite.svg",
+  },
   // supabase-logo-wordmark--dark.svg
 ];
 
@@ -99,6 +134,49 @@ export const systems: DataTech[] = [
     lang: "odoo",
     img: "/assets/techs/systems/10-Odoo.svg",
   },
+];
+
+export const pass: DataTech[] = [
+  {
+    id: 0,
+    lang: "vercel",
+    img: "/assets/techs/paas/vercel_wordmark_dark.svg",
+  },
+  {
+    id: 1,
+    lang: "netlify",
+    img: "/assets/techs/paas/netlify.svg",
+  },
+  {
+    id: 2,
+    lang: "render",
+    img: "/assets/techs/paas/render.png",
+  },
+  {
+    id: 3,
+    lang: "railway",
+    img: "/assets/techs/paas/railway_dark.svg",
+  },
+  {
+    id: 4,
+    lang: "aws",
+    img: "/assets/techs/paas/aws_dark.svg",
+  },
+  {
+    id: 5,
+    lang: "github pages",
+    img: "/assets/techs/paas/github_wordmark_dark.svg",
+  },
+  // {
+  //   id: 6,
+  //   lang: "gcp",
+  //   img: "/assets/techs/paas/gcp.svg",
+  // },
+  //   {
+  //   id: 4,
+  //   lang: "heroku",
+  //   img: "/assets/techs/paas/heroku.svg",
+  // },
 ];
 
 export const tasks: Tasks[] = [
@@ -171,12 +249,12 @@ export const tasks: Tasks[] = [
 
 export const LINK_WS =
   "https://wa.me/+584124363214?text=Hola%20Por%20favor%20mas%20informacion%20sobre%20sus%20productos%20y%20servicios.";
-export const LINK_URL = "https://tecnicoseguridad.vercel.app";
+export const LINK_URL = "https://portfolio-cmba.vercel.app";
 export const LINK_ZERO = "/#contacto";
-export const LINK_INSTAGRAM = "https://www.instagram.com/tecnicoseguridad.ve";
-export const LINK_FACEBOOK = "https://facebook.com/tecnicoseguridad.ve";
+export const LINK_INSTAGRAM = "https://www.instagram.com/";
+export const LINK_FACEBOOK = "https://facebook.com/";
 export const LINK_LINKEDIN =
   "https://www.linkedin.com/company/tecnicoseguridad-ve";
-export const LINK_TWITTER = "https://www.x.com/tecnicoseguridad.ve";
+export const LINK_TWITTER = "https://www.x.com/";
 
 export const LINK_API_LIST_EMAIL_DEV = "http://127.0.0.1:4000/api/listemail/";
